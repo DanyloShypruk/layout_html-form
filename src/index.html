@@ -11,7 +11,187 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
+    <form 
+      action="https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post"
+    >
+      <fieldset class="form-fieldset-first">
+        <legend>Personal information</legend>  
+        <div class="form-field">  
+          <label for="Surname">
+            Surname:
+          </label>
+          <input
+            name="Surname"
+            type="text"
+            id="Surname"
+            autocomplete="off"
+          >
+        </div>
+        <div class="form-field">   
+          <label for="Name">
+            Name:
+          </label>
+          <input
+            name="Name"
+            type="text"
+            id="Name"
+            autocomplete="off"
+          >
+        </div>
+        <div class="form-field">
+          <label for="Age">
+            How old are You?
+          </label>
+          <input
+            name="Age"
+            type="number"
+            id="Age"
+            min="1"
+            max="100"
+            value="12"
+          >
+        </div>
+        <div class="form-field">
+          <label for="DateOfBirth">
+            Full date of birth:
+          </label>
+          <input
+            name="DateOfBirth"
+            type="date" 
+            id="DateOfBirth"
+          >
+        </div>
+        <div class="form-field-last-in-fieldset">
+          <label for="TermOfTheAgreement">
+            I accept the term of the agreement
+          </label>
+          <input
+            name="TermOfTheAgreement"
+            type="checkbox"
+            id="TermOfTheAgreement"
+          >
+        </div>
+      </fieldset>
+      <fieldset class="form-fieldset-second">
+        <legend>Registration</legend> 
+        <div class="form-field">
+          <label for="email">
+            E-mail:
+          </label>
+          <input
+            name="E-mail"
+            type="email" 
+            id="email"
+            placeholder="email@example.com"
+          >
+        </div>
+        <div class="form-field-last-in-fieldset">
+          <label for="password">
+            Password:
+          </label>
+          <input
+            name="Password"
+            type="password"
+            id="password"
+          >
+        </div> 
+      </fieldset>
+      <fieldset class="form-fieldset-third">
+        <legend>An interesting fact about you!</legend> 
+        <div class="form-field">
+          Do you love cats?
+          <label>
+            <input
+              name="LoveCats"
+              type="radio"
+              value="yes"
+            >
+            Yes
+          </label>
+          <label>
+            <input
+              name="LoveCats"
+              type="radio"
+              value="no"
+            >
+            No
+          </label>
+        </div>
+        <div class="form-field">
+          <label for="FavoriteColor">
+            What is your favorite color?
+          </label>
+          <input
+            name="FavoriteColor"
+            type="color"
+            id="FavoriteColor"
+          >
+        </div>
+        <div class="form-field">
+          <label for="GoToBed">
+            What time do you go to bed?
+          </label>
+          <input
+            name="GoToBed"
+            type="time"
+            id="GoToBed"
+          >
+        </div>
+        <div class="form-field">
+          <label>
+            What are your favorite brand of cars?
+            <select
+              name="FavoriteBrandOfCars"
+              required
+              multiple
+            >
+              <option value="BMW">BMW</option>
+              <option value="Audi">Audi</option>
+              <option value="Lada">Lada</option>
+            </select>
+          </label>
+        </div>
+        <div class="form-field-last-in-fieldset">
+          <label for="RateOurWork">
+            How do you rate our work?
+          </label>
+          <input
+            name="RateOurWork" 
+            type="range"
+            id="RateOurWork"
+            min="0"
+            max="100"
+            step="5"
+          >
+        </div> 
+      </fieldset> 
+      <fieldset class="form-fieldset-fourth">
+        <legend>Additional info:</legend> 
+        <div class="form-field">
+          <label for="Comments">
+            Comments:
+          </label>
+          <textarea
+            minlength="0"
+            maxlength="100"
+            name="Comments"
+            id="Comments"
+          >
+          </textarea>
+        </div>
+        <div class="form-field-last-in-fieldset">
+          <label>
+            Would you recommend us?
+            <select name="RecommendUs" required>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+            </select>
+          </label>
+        </div>
+      </fieldset>
+      <button type="submit">Submit</button> 
+    </form>     
     <script type="text/javascript" src="./main.js"></script>
   </body>
 </html>

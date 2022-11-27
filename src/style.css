@@ -1,1 +1,9 @@
-/* styles go here */
+.form-field {
+  margin-bottom: 10px;
+}
+
+.form-fieldset-first,
+.form-fieldset-second,
+.form-fieldset-third {
+  margin-bottom: 20px;
+}
