@@ -1,9 +1,12 @@
 .form-field {
+  display: block;
   margin-bottom: 10px;
 }
 
-.form-fieldset-first,
-.form-fieldset-second,
-.form-fieldset-third {
+.form-field:last-child {
+  margin: auto;
+}
+
+.form-fieldset {
   margin-bottom: 20px;
 }
